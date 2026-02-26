@@ -5,428 +5,242 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <title>Hospital Website</title>
 
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- header -->
-    <header class="header bg-blue">
-        <nav class="navbar bg-blue">
-            <div class="container flex">
-                <a href="index.html" class="navbar-brand">
-                    <img src="images/logo.png">
-                </a>
-                <button type="button" class="navbar-show-btn">
-                    <img src="images/ham-menu-icon.png">
+
+<!-- HEADER -->
+<header class="header bg-blue">
+    <nav class="navbar bg-blue">
+        <div class="container flex">
+            <a href="index.html" class="navbar-brand">
+                <img src="logo.png" alt="Logo">
+            </a>
+
+            <button type="button" class="navbar-show-btn">
+                <img src="ham-menu-icon.png" alt="Menu">
+            </button>
+
+            <div class="navbar-collapse bg-white">
+                <button type="button" class="navbar-hide-btn">
+                    <img src="close-icon.png" alt="Close">
                 </button>
 
-                <div class="navbar-collapse bg-white">
-                    <button type="button" class="navbar-hide-btn">
-                        <img src="images/close-icon.png">
-                    </button>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#about" class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#services" class="nav-link">Service</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#doc-panel" class="nav-link">Doctors</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#package-service" class="nav-link">Departments</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#posts" class="nav-link">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contact" class="nav-link">Contact</a>
-                        </li>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Service</a></li>
+                    <li class="nav-item"><a href="#doc-panel" class="nav-link">Doctors</a></li>
+                    <li class="nav-item"><a href="#package-service" class="nav-link">Departments</a></li>
+                    <li class="nav-item"><a href="#posts" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
 
-                        <div class="search-bar-box flex">
-                            <span class="search-icon flex">
-                                <img src="images/search-icon-dark.png">
-                            </span>
-                            <input type="search" class="search-control" placeholder="Search here">
-                        </div>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="header-inner text-white text-center">
-            <div class="container grid">
-                <div class="header-inner-left">
-                    <h1>your most trusted<br> <span>health partner</span></h1>
-                    <p class="lead">the best match services for you</p>
-                    <p class="text text-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
-                        molestiae?</p>
-                    <div class="btn-group">
-                        <a href="#" class="btn btn-white">Learn More</a>
-                        <a href="#" class="btn btn-light-blue">Sign In</a>
+                    <div class="search-bar-box flex">
+                        <span class="search-icon flex">
+                            <img src="search-icon-dark.png" alt="Search">
+                        </span>
+                        <input type="search" class="search-control" placeholder="Search here">
                     </div>
-                </div>
-                <div class="header-inner-right">
-                    <img src="images/header.png">
-                </div>
+                </ul>
             </div>
         </div>
-    </header>
-    <!-- header end -->
+    </nav>
 
-    <main>
-        <!-- about section -->
-        <section id="about" class="about py">
-            <div class="about-inner">
-                <div class="container grid">
-                    <div class="about-left text-center">
-                        <div class="section-head">
-                            <h2>About Us</h2>
-                            <div class="border-line"></div>
-                        </div>
-                        <p class="text text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore
-                            dolorum obcaecati alias nobis, amet, suscipit commodi at doloribus optio ad dolorem id enim
-                            nulla ab accusamus magnam sapiente asperiores doloremque iste facere eos, voluptatibus quas
-                            nemo. Maiores exercitationem incidunt tenetur et vitae culpa perspiciatis, eum inventore
-                            obcaecati? Eveniet, quo distinctio.</p>
-                        <a href="#" class="btn btn-white">Learn More</a>
-                    </div>
-                    <div class="about-right flex">
-                        <div class="img">
-                            <img src="images/about-img.png">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- banner one -->
-        <section id="banner-one" class="banner-one text-center">
-            <div class="container text-white">
-                <blockquote class="lead"><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Unde natus eius incidunt magnam quaerat optio deserunt magni ea, dolorum iure.<i
-                        class="fas fa-quote-right"></i></blockquote>
-                <small class="text text-sm">- Anonim Nano</small>
-            </div>
-        </section>
-
-        <!-- service section -->
-        <section id="services" class="services py">
-            <div class="container">
-                <div class="section-head text-center">
-                    <h2 class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quaerat
-                        officia in molestiae praesentium ducimus.</h2>
-                    <p class="text text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                    <div class="line-art flex">
-                        <div></div>
-                        <img src="images/4-dots.png">
-                        <div></div>
-                    </div>
-                    <div class="services-inner text-center grid">
-                        <article class="service-item">
-                            <div class="icon">
-                                <img src="images/service-icon-1.png">
-                            </div>
-                            <h3>Cardio Monitoring</h3>
-                            <p class="text text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Necessitatibus eos dicta officiis quos iste id ut autem totam sequi veritatis?</p>
-                        </article>
-
-                        <article class="service-item">
-                            <div class="icon">
-                                <img src="images/service-icon-2.png">
-                            </div>
-                            <h3>Medical Treatment</h3>
-                            <p class="text text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Necessitatibus eos dicta officiis quos iste id ut autem totam sequi veritatis?</p>
-                        </article>
-
-                        <article class="service-item">
-                            <div class="icon">
-                                <img src="images/service-icon-3.png">
-                            </div>
-                            <h3>Emergency Help</h3>
-                            <p class="text text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Necessitatibus eos dicta officiis quos iste id ut autem totam sequi veritatis?</p>
-                        </article>
-
-                        <article class="service-item">
-                            <div class="icon">
-                                <img src="images/service-icon-4.png">
-                            </div>
-                            <h3>First Aid</h3>
-                            <p class="text text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Necessitatibus eos dicta officiis quos iste id ut autem totam sequi veritatis?</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- banner two section -->
-        <section id="banner-two" class="banner-two text-center">
-            <div class="container grid">
-                <div class="banner-two-left">
-                    <img src="images/banner-2-img.png">
-                </div>
-                <div class=" banner-two-right">
-                    <p class="lead text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    <div class="btn-group">
-                        <a href="#" class="btn btn-white">Learn More</a>
-                        <a href="#" class="btn btn-light-blue">Sign In</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- doctors section -->
-        <section id="doc-panel" class="doc-panel py">
-            <div class="container">
-                <div class="section-head">
-                    <h2>Our Doctor Panel</h2>
-                </div>
-
-                <div class="doc-panel-inner grid">
-                    <div class="doc-panel-item">
-                        <div class="img flex">
-                            <img src="images/doc-1.png">
-                            <div class="info text-center bg-blue text-white flex">
-                                <p class="lead">samuel goe</p>
-                                <p class="text-lg">Medicine</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="doc-panel-item">
-                        <div class="img flex">
-                            <img src="images/doc-2.png">
-                            <div class="info text-center bg-blue text-white flex">
-                                <p class="lead">elizabeth irs</p>
-                                <p class="text-lg">Cardiology</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="doc-panel-item">
-                        <div class="img flex">
-                            <img src="images/doc-3.png">
-                            <div class="info text-center bg-blue text-white flex">
-                                <p class="lead">tanya collis</p>
-                                <p class="text-lg">Medicine</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- package services section -->
-        <section id="package-service" class="package-service py text-center">
-            <div class="container">
-                <div class="package-service-head text-white">
-                    <h2>Package Service</h2>
-                    <p class="text text-lg">Best service package for you</p>
-                </div>
-                <div class="package-service-inner grid">
-                    <div class="package-service-item bg-white">
-                        <div class="icon flex">
-                            <i class="fas fa-phone fa-2x"></i>
-                        </div>
-                        <h3>Regular Case</h3>
-                        <p class="text text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-                            similique deleniti nisi minima reiciendis corporis rerum tempore molestias quod incidunt.
-                        </p>
-                        <a href="#" class="btn btn-blue">Read More</a>
-                    </div>
-
-                    <div class="package-service-item bg-white">
-                        <div class="icon flex">
-                            <i class="fas fa-calendar-alt fa-2x"></i>
-                        </div>
-                        <h3>Serious Case</h3>
-                        <p class="text text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-                            similique deleniti nisi minima reiciendis corporis rerum tempore molestias quod incidunt.
-                        </p>
-                        <a href="#" class="btn btn-blue">Read More</a>
-                    </div>
-
-                    <div class="package-service-item bg-white">
-                        <div class="icon flex">
-                            <i class="fas fa-comments fa-2x"></i>
-                        </div>
-                        <h3>Emergency Case</h3>
-                        <p class="text text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-                            similique deleniti nisi minima reiciendis corporis rerum tempore molestias quod incidunt.
-                        </p>
-                        <a href="#" class="btn btn-blue">Read More</a>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-       <!-- posts section -->
-       <section id ="posts" class="posts py">
-        <div class=""container>
-            <div class="section-head">
-                <h2>Latest Post</h2>
-            </div>
-            <div class="posts-inner grid">
-                <article class="posts-item bg-white">
-                    <div class="img">
-                        <img src="images/post-1.jpg">
-                    </div>
-                    <div class="content">
-                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ut!</h4>
-                        <p class="text text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.  sapiente totam rem eius quisquam saepe.</p>
-                        <p class="text text-sm">Lorem ipsum, dolor sit amet  Nemo ducimus quasi reiciendis, veniam excepturi ipsam vero quos!</p>
-                        <div class="info flex">
-                            <small class="text text-sm"><i class="fas fa-clock"></i>October 27,2025</small>
-                            <small class="text text-sm"><i class="fas fa-comment"></i>5 comments</small>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="posts-item bg-white">
-                    <div class="img">
-                        <img src="images/post-2.jpg">
-                    </div>
-                    <div class="content">
-                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ut!</h4>
-                        <p class="text text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.sapiente totam rem eius quisquam saepe.</p>
-                        <p class="text text-sm">Lorem ipsum, dolor sit amet  Nemo ducimus quasi reiciendis, veniam excepturi ipsam vero quos!</p>
-                        <div class="info flex">
-                            <small class="text text-sm"><i class="fas fa-clock"></i>October 27,2025</small>
-                            <small class="text text-sm"><i class="fas fa-comment"></i>5 comments</small>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="posts-item bg-white">
-                    <div class="img">
-                        <img src="images/post-3.jpg">
-                    </div>
-                    <div class="content">
-                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ut!</h4>
-                        <p class="text text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. sapiente totam rem eius quisquam saepe.</p>
-                        <p class="text text-sm">Lorem ipsum, dolor sit amet  Nemo ducimus quasi reiciendis, veniam excepturi ipsam vero quos!</p>
-                        <div class="info flex">
-                            <small class="text text-sm"><i class="fas fa-clock"></i>October 27,2025</small>
-                            <small class="text text-sm"><i class="fas fa-comment"></i>5 comments</small>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-       </section>
-
-       <!-- contact section -->
-       <section id ="contact" class="contact py">
+    <div class="header-inner text-white text-center">
         <div class="container grid">
-            <div class="contact-left">
-                <iframe src="https://www.google.com/maps/dir//Toronto,+Ontario/@25.2048493,55.2707828,8z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89d4cb90d7c63ba5:0x323555502ab4c477!2m2!1d-79.388447!2d43.6548253?entry=ttu&g_ep=EgoyMDI2MDIyNC4wIKXMDSoASAFQAw%3D%3D" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="contact-right text-white text-center bg-blue">
-                <div class="contact-head">
-                    <h3 class="lead">Contact Us</h3>
-                    <p class="text text-md">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni minus numquam fugit natus, vitae reprehenderit!</p>
+            <div class="header-inner-left">
+                <h1>Your Most Trusted<br><span>Health Partner</span></h1>
+                <p class="lead">The best medical services for you</p>
+                <p class="text text-md">We provide quality healthcare services with trusted professionals.</p>
+
+                <div class="btn-group">
+                    <a href="#" class="btn btn-white">Learn More</a>
+                    <a href="#" class="btn btn-light-blue">Sign In</a>
                 </div>
-                <form>
-                    <div class="form-element">
-                        <input type="text" class="form-control" placeholder="Your name">
-                    </div>
-                    <div class="form-element">
-                        <input type="email" class="form-control" placeholder="Your email">
-                    </div>
-                    <div class="form-element">
-                        <textarea rows ="5" placeholder="Your Message" class="form-control"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-white btn-submit">
-                        <i class="fas fa-arrow-right"></i>Send Message
-                    </button>
-                </form>
+            </div>
+
+            <div class="header-inner-right">
+                <img src="header.png" alt="Header Image">
             </div>
         </div>
-       </section>
+    </div>
+</header>
 
-       <!-- footer -->
-       <footer id="footer" class="footer text-center">
-            <div class="container">
-                <div class="footer-inner text-white py grid">
-                    <div class="footer-item">
-                        <h3 class="footer-head">about us</h3>
-                        <div class="icon">
-                            <img src="images/logo.png">
-                        </div>
-                        <p class="text text-md">Lorem ipsum, dolor sit amet consectetur adipisicing elit. repellendus possimus?</p>
-                        <address>
-                            Medic Clinic<br>
-                            20 Maryhill Drive<br>
-                            Etobicoke<br>
-                            Toronto-M9V3B9
-                        </address>
-                    </div>
+<main>
 
-                    <div class="footer-item">
-                        <h3 class="footer-head">tags</h3>
-                        <ul class="tags-list flex">
-                            <li>Medical Care</li>
-                            <li>Emergency</li>
-                            <li>Therapy</li>
-                            <li>Surgery</li>
-                            <li>Medication</li>
-                            <li>Nurse</li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-item">
-                        <h3 class="footer-head">Quick Links</h3>
-                        <ul>
-                            <li><a href="#" class="text-white">Our Services</a></li>
-                            <li><a href="#" class="text-white">Our Plan</a></li>
-                            <li><a href="#" class="text-white">Privacy Policy</a></li>
-                            <li><a href="#" class="text-white">Appointment Schedule</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-item">
-                        <h3 clas="footer-head">make an appointment</h3>
-                        <p class="text text-md">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, facere.</p>
-                        <ul class="appointment-info">
-                            <li>8:00 AM - 11:00 AM</li>
-                            <li>2:00 PM - 05:00 PM</li>
-                            <li>8:00 PM - 11:00 PM</li>
-                            <li>
-                                <i class="fas fa-envelope"></i>
-                                    <span>revomedic@gmail.com</span>
-                            </li>
-                                <i class="fas fa-phone"> </i>
-                                    <span>+1 4377339734</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="footer-links">
-                    <ul class="flex">
-                        <li><a href="#" class="text-white flex"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#" class="text-white flex"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#" class="text-white flex"><i class="fab fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
+<!-- ABOUT -->
+<section id="about" class="about py">
+    <div class="container grid">
+        <div class="about-left text-center">
+            <div class="section-head">
+                <h2>About Us</h2>
+                <div class="border-line"></div>
             </div>
-       </footer>
-    </main>
-    <script src="app.js"></script>
+
+            <p class="text text-lg">
+                We are committed to delivering high-quality healthcare services
+                with advanced medical technology and expert doctors.
+            </p>
+
+            <a href="#" class="btn btn-white">Learn More</a>
+        </div>
+
+        <div class="about-right flex">
+            <img src="about-img.png" alt="About Image">
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services py">
+    <div class="container text-center">
+        <div class="section-head">
+            <h2>Our Services</h2>
+            <p class="text text-lg">We offer professional healthcare services</p>
+
+            <div class="line-art flex">
+                <div></div>
+                <img src="4-dots.png" alt="Dots">
+                <div></div>
+            </div>
+        </div>
+
+        <div class="services-inner grid">
+
+            <div class="service-item">
+                <img src="service-icon-1.png" alt="">
+                <h3>Cardio Monitoring</h3>
+                <p>Advanced heart monitoring and diagnostics.</p>
+            </div>
+
+            <div class="service-item">
+                <img src="service-icon-2.png" alt="">
+                <h3>Medical Treatment</h3>
+                <p>Professional medical treatments with expert doctors.</p>
+            </div>
+
+            <div class="service-item">
+                <img src="service-icon-3.png" alt="">
+                <h3>Emergency Help</h3>
+                <p>24/7 emergency healthcare support.</p>
+            </div>
+
+            <div class="service-item">
+                <img src="service-icon-4.png" alt="">
+                <h3>First Aid</h3>
+                <p>Immediate medical assistance and first aid.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- DOCTORS -->
+<section id="doc-panel" class="doc-panel py">
+    <div class="container text-center">
+        <h2>Our Doctor Panel</h2>
+
+        <div class="doc-panel-inner grid">
+            <div class="doc-panel-item">
+                <img src="doc-1.png" alt="">
+                <h4>Samuel Goe</h4>
+                <p>Medicine</p>
+            </div>
+
+            <div class="doc-panel-item">
+                <img src="doc-2.png" alt="">
+                <h4>Elizabeth Irs</h4>
+                <p>Cardiology</p>
+            </div>
+
+            <div class="doc-panel-item">
+                <img src="doc-3.png" alt="">
+                <h4>Tanya Collis</h4>
+                <p>Medicine</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- POSTS -->
+<section id="posts" class="posts py">
+    <div class="container">
+        <h2 class="text-center">Latest Posts</h2>
+
+        <div class="posts-inner grid">
+            <div class="posts-item">
+                <img src="post-1.jpg" alt="">
+                <h4>Health Awareness</h4>
+                <p>Tips for maintaining a healthy lifestyle.</p>
+            </div>
+
+            <div class="posts-item">
+                <img src="post-2.jpg" alt="">
+                <h4>Medical Research</h4>
+                <p>Latest advancements in medical science.</p>
+            </div>
+
+            <div class="posts-item">
+                <img src="post-3.jpg" alt="">
+                <h4>Doctor Advice</h4>
+                <p>Expert health advice from professionals.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact py">
+    <div class="container grid">
+        <div class="contact-left">
+            <iframe width="100%" height="400"
+                src="https://www.google.com/maps?q=Toronto&output=embed"
+                style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+
+        <div class="contact-right bg-blue text-white text-center">
+            <h3>Contact Us</h3>
+
+            <form>
+                <input type="text" placeholder="Your Name" class="form-control">
+                <input type="email" placeholder="Your Email" class="form-control">
+                <textarea rows="5" placeholder="Your Message" class="form-control"></textarea>
+                <button type="submit" class="btn btn-white">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer text-center bg-blue text-white">
+    <div class="container py">
+
+        <img src="logo.png" alt="Logo">
+
+        <p>Medic Clinic</p>
+        <p>20 Maryhill Drive, Toronto</p>
+        <p>Email: revomedic@gmail.com</p>
+
+        <ul class="appointment-info">
+            <li>8:00 AM - 11:00 AM</li>
+            <li>2:00 PM - 05:00 PM</li>
+            <li>8:00 PM - 11:00 PM</li>
+            <li><i class="fas fa-phone"></i> +1 4377339734</li>
+        </ul>
+
+    </div>
+</footer>
+
+</main>
+
+<script src="app.js"></script>
 </body>
-
-
 </html>
